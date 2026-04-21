@@ -1,0 +1,7 @@
+#!/bin/bash
+cd ~/src/fancy_tools
+git checkout main
+git pull origin main
+cp bin/updateFancyTools ~/bin/
+chmod +x ~/bin/updateFancyTools
+echo "Outils mis à jour !"
