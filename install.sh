@@ -16,7 +16,7 @@ add_if_missing() {
 # Création du dossier src et clonage
 mkdir -p "$HOME/src"
 if [ ! -d "$SRC_DIR" ]; then
-    git clone "$REPO_URL" "$SRC_DIR"
+    git clone -b dev "$REPO_URL" "$SRC_DIR"
 fi
 
 # Config bashrc
